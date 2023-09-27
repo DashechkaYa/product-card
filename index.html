@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <div class="card container">
+    <div class="card__img">
+      <img class="card__img--sneackers" src="img/Photo-cropp.png" alt="Photo sneackers">
+    </div>
+    <div class="card__block">
+      <h2 class="card__title">Nike React Infinity Run Flyknit 3 Mens</h2>
+      <h3 class="card__price">$159.00</h3>
+      <div class="card__rating">
+        <div class="rating"><img class="rating__item" src="img/bi_star-fill.svg" alt="star-fill"></div>
+        <div class="rating"><img class="rating__item" src="img/bi_star-fill.svg" alt="star-fill"></div>
+        <div class="rating"><img class="rating__item" src="img/bi_star-fill.svg" alt="star-fill"></div>
+        <div class="rating"><img class="rating__item" src="img/bi_star-half-fill.svg" alt="star-half-fill"></div>
+        <div class="rating"><img class="rating__item" src="img/bi_star-empty.svg" alt="star-fill"></div>
+      </div>
+      <p class="card__text">Treat your feet to the comfort they deserve with the Nike React Infinity Run Flyknit 3. This
+        latest addition grants a soft and stable ride over any distance through it's unique rocker design, shaped to
+        support all 3 phases of your stride. </p>
+
+      <form class="card__form form" action="" method="">
+        <div class="form__radio radio-size">
+          <div class="radio-size__title" for="size">Size:</div>
+          <label class="radio-size__label" for="size"><input class="radio-size__input" id="size" type="radio"
+              name="size" value="1"><span class="radio-size__border"></span><span class="radio-size__text">41</span>
+          </label>
+          <label class="radio-size__label" for="size"><input class="radio-size__input" id="size" type="radio"
+              name="size" value="2"><span class="radio-size__border"></span><span class="radio-size__text">42</span>
+          </label>
+          <label class="radio-size__label" for="size"><input class="radio-size__input" id="size" type="radio"
+              name="size" value="3"><span class="radio-size__border"></span><span class="radio-size__text">43</span>
+          </label>
+          <label class="radio-size__label" for="size"><input class="radio-size__input" id="size" type="radio"
+              name="size" value="4" disabled><span class="radio-size__border radio-size__border--disabled"></span><span
+              class="radio-size__text radio-size__text--disabled">44</span>
+          </label>
+          <label class="radio-size__label" for="size"><input class="radio-size__input" id="size" type="radio"
+              name="size" value="5"><span class="radio-size__border"></span><span class="radio-size__text">45</span>
+          </label>
+        </div>
+
+        <div class="form__radio radio-colour">
+          <div class="radio-colour__title" for="colour">Colour:</div>
+          <label class="radio-colour__label" for="colour"><input class="radio-colour__input" id="colour" type="radio"
+              name="colour" value="1"><span class="radio-colour__border border--green"></span>
+          </label>
+          <label class="radio-colour__label" for="colour"><input class="radio-colour__input" id="colour" type="radio"
+              name="colour" value="2"><span class="radio-colour__border border--red"></span>
+          </label>
+        </div>
+
+        <div class="form__button">
+          <button class="form__button--item button button__buy" type="submit">Buy now</button>
+          <button class="form__button--item button button__add" type="button">Add to cart</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
