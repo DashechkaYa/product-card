@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --star-size: 16px;
+  --star-size-half: calc(var(--star-size) / 2);
+}
+
 html {
   font-size: 10px;
 }
@@ -78,6 +83,7 @@ body {
 
 .card__rating {
   margin-bottom: 4rem;
+  position: relative;
 }
 
 .rating {
@@ -85,7 +91,7 @@ body {
   gap: 1rem;
 }
 
-.star {
+/* .star {
   width: 16px;
   height: 16px;
 }
@@ -93,6 +99,70 @@ body {
 .star__icon {
   width: inherit;
   height: inherit;
+} */
+
+.star-input__icon {
+  flex-shrink: 0;
+  width: var(--star-size);
+  height: calc(var(--star-size) * 0.94);
+  fill: #ffc90a;
+}
+
+.rating__input {
+  position: absolute;
+  top: 0;
+}
+
+.star-input {
+  flex-shrink: 0;
+  z-index: 1;
+  width: var(--star-size-half);
+  height: calc(var(--star-size) * 0.95);
+  /* opacity: 0; */
+  cursor: pointer;
+}
+
+/* .star-input:nth-of-type(n) {
+  left: 0;
+} */
+.star-input:nth-of-type(2) {
+  left: calc(var(--star-size-half) * 1);
+}
+.star-input:nth-of-type(3) {
+  left: calc(var(--star-size-half) * 2);
+}
+.star-input:nth-of-type(4) {
+  left: calc(var(--star-size-half) * 3);
+}
+.star-input:nth-of-type(5) {
+  left: calc(var(--star-size-half) * 4);
+}
+.star-input:nth-of-type(6) {
+  left: calc(var(--star-size-half) * 5);
+}
+.star-input:nth-of-type(7) {
+  left: calc(var(--star-size-half) * 6);
+}
+.star-input:nth-of-type(8) {
+  left: calc(var(--star-size-half) * 7);
+}
+.star-input:nth-of-type(9) {
+  left: calc(var(--star-size-half) * 8);
+}
+.star-input:nth-of-type(10) {
+  left: calc(var(--star-size-half) * 9);
+}
+.star-input[data-variant="half"]:checked ~ .star-input__icon {
+  fill: transparent;
+}
+.star-input[data-variant="half"]:checked + .star-input + .star-input__icon {
+  fill: url(#half);
+}
+.star-input[data-variant="full"]:checked ~ .star-input__icon {
+  fill: transparent;
+}
+.star-input[data-variant="full"]:checked + .star-input__icon {
+  fill: #ffc90a;
 }
 
 .card__text {
@@ -102,12 +172,6 @@ body {
   line-height: 165%;
   margin-bottom: 4rem;
 }
-
-/* .card__form {
-}
-
-.form {
-} */
 
 .form__size {
   margin-bottom: 2.4rem;
